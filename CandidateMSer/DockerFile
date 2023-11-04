@@ -1,0 +1,4 @@
+FROM openjdk:8
+EXPOSE 8084
+ADD target/CandidateMSer-0.0.1-SNAPSHOT.jar CandidatMS-Docker.jar
+ENTRYPOINT ["java", "-jar", "CandidatMS-Docker.jar"]
